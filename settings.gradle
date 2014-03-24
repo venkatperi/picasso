@@ -1,0 +1,8 @@
+rootProject.name = 'picasso-parent'
+include ':picasso'
+//include ':picasso-pollexor'
+//include ':picasso-sample'
+
+//project(':picasso').projectDir = "$rootDir/picasso" as File
+//project(':picasso-pollexor').projectDir = "$rootDir/picasso-pollexor" as File
+//project(':picasso-sample').projectDir = "$rootDir/picasso-sample" as File

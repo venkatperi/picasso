@@ -1,0 +1,15 @@
+
+description = 'Picasso Pollexor Transformer'
+dependencies {
+  compile project(':picasso')
+    compile group: 'com.squareup', name: 'pollexor', version:'2.0.0'
+    testCompile group: 'junit', name: 'junit', version:'4.10'
+    testCompile group: 'org.easytesting', name: 'fest-assert-core', version:'2.0M10'
+    testCompile group: 'com.squareup', name: 'fest-android', version:'1.0.6'
+    testCompile group: 'org.robolectric', name: 'robolectric', version:'2.2'
+    compile(group: 'com.google.android', name: 'android', version:'4.1.1.4') {
+       /* This dependency was originally in the Maven provided scope, but the project was not of type war.
+       This behavior is not yet supported by Gradle, so this dependency has been converted to a compile dependency.
+       Please review and delete this closure when resolved. */
+    }
+}
